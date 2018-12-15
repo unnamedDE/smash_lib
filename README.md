@@ -11,7 +11,7 @@ Also it includes 2 example recipes:
 
 To use this:
 
-Anvil Tag => smashed_anvil,
+Anvil Tag => smashed_anvil
 
 Piston Tag => smashed_piston
 

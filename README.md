@@ -15,3 +15,6 @@ Anvil Tag => smashed_anvil
 Piston Tag => smashed_piston
 
 Smashed entities get the tags for one tick.
+
+
+Made with mcscript by stevertus (stevertus.com)

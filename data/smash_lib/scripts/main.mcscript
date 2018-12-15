@@ -1,0 +1,10 @@
+
+#file: ./main
+// here goes your main content
+// executes 20 times a second
+
+#examples
+/function smash_lib:example
+#
+/function smash_lib:detect
+/function smash_lib:action/main

@@ -49,4 +49,3 @@ as('@e[scores={smash_pston_cool=0}]') {
 
 /scoreboard players set @s smash_pston_cool 50
 /scoreboard players remove @s smash_piston 1
-/say hi

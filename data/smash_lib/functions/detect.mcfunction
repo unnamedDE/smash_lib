@@ -7,9 +7,12 @@
 
 
 #For the anvil stuff
-execute at @e[type=falling_block,nbt={BlockState:{Name:"minecraft:anvil"}}] as @e[dx=0,dy=1,dz=0,type=!falling_block] at @s unless entity @s[scores={smash_anvil=1..}] unless entity @s[scores={smash_anvil_cool=1..}] run scoreboard players set @s smash_anvil 1
-execute at @e[type=falling_block,nbt={BlockState:{Name:"minecraft:chipped_anvil"}}] as @e[dx=0,dy=1,dz=0,type=!falling_block] at @s unless entity @s[scores={smash_anvil=1..}] unless entity @s[scores={smash_anvil_cool=1..}] run scoreboard players set @s smash_anvil 1
-execute at @e[type=falling_block,nbt={BlockState:{Name:"minecraft:damaged_anvil"}}] as @e[dx=0,dy=1,dz=0,type=!falling_block] at @s unless entity @s[scores={smash_anvil=1..}] unless entity @s[scores={smash_anvil_cool=1..}] run scoreboard players set @s smash_anvil 1
+execute at @e[type=falling_block,nbt={BlockState:{Name:"minecraft:anvil"}}] as @e[distance=..1.75,type=!falling_block] at @s if entity @s[type=item,tag=!smash_lib_invulnerable] run function smash_lib:invulnerable/invulnerable
+execute at @e[type=falling_block,nbt={BlockState:{Name:"minecraft:chipped_anvil"}}] as @e[distance=..1.75,type=!falling_block] at @s if entity @s[type=item,tag=!smash_lib_invulnerable] run function smash_lib:invulnerable/invulnerable
+execute at @e[type=falling_block,nbt={BlockState:{Name:"minecraft:damaged_anvil"}}] as @e[distance=..1.75,type=!falling_block] at @s if entity @s[type=item,tag=!smash_lib_invulnerable] run function smash_lib:invulnerable/invulnerable
+execute at @e[type=falling_block,nbt={BlockState:{Name:"minecraft:anvil"}}] as @e[distance=..1.75,type=!falling_block] at @s unless entity @s[scores={smash_anvil=1..}] unless entity @s[scores={smash_anvil_cool=1..}] run scoreboard players set @s smash_anvil 1
+execute at @e[type=falling_block,nbt={BlockState:{Name:"minecraft:chipped_anvil"}}] as @e[distance=..1.75,type=!falling_block] at @s unless entity @s[scores={smash_anvil=1..}] unless entity @s[scores={smash_anvil_cool=1..}] run scoreboard players set @s smash_anvil 1
+execute at @e[type=falling_block,nbt={BlockState:{Name:"minecraft:damaged_anvil"}}] as @e[distance=..1.75,type=!falling_block] at @s unless entity @s[scores={smash_anvil=1..}] unless entity @s[scores={smash_anvil_cool=1..}] run scoreboard players set @s smash_anvil 1
 
 
 #For the piston stuff

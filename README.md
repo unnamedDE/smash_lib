@@ -1,4 +1,7 @@
 # smash_lib
+
+# Smash Lib is now included in [unnamed-core](https://github.com/unnamedDE/unnamed-core/)
+
 A library used for detecting smashed entities in MC 1.13+
 
 Includes 2 action types:
